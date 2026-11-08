@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Limule Bot</title>
+<style>
+body{background:#111;color:#fff;text-align:center;font-family:sans-serif}
+h1{color:#ffd700}
+#score{font-size:28px;margin:10px}
+#limule{font-size:100px;cursor:pointer}
+button{background:#ffd700;border:0;padding:12px 20px;border-radius:10px;font-weight:bold}
+</style>
+</head>
+<body>
+<h1>🐌 LIMULE BOT</h1>
+<p>Clique sur la limule pour gagner des points !</p>
+<div id="score">Score : 0</div>
+<div id="limule" onclick="clic()">🐌</div>
+<br><br>
+<button onclick="reset()">Recommencer</button>
+<script>
+let s=0;
+function clic(){s++;document.getElementById('score').innerText='Score : '+s;}
+function reset(){s=0;document.getElementById('score').innerText='Score : 0';}
+</script>
+</body>
+</html>
